@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orbit Cart - Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="cart">
+  <div class="bg-orbit"></div>
+  <header class="site-header">
+    <a class="logo" href="main.html">Orbit Cart</a>
+    <nav class="nav">
+      <a href="main.html#new">New</a>
+      <a href="main.html#collections">Collections</a>
+      <a href="main.html#featured">Featured</a>
+      <a href="main.html#reviews">Reviews</a>
+    </nav>
+    <div class="header-actions">
+      <a class="ghost" href="main.html">Keep shopping</a>
+      <a class="primary" href="cart.html">Cart <span class="cart-count">0</span></a>
+    </div>
+  </header>
+
+  <main class="cart-page">
+    <section class="cart-hero">
+      <h1>Your cart</h1>
+      <p class="lead">Review your picks before checkout.</p>
+    </section>
+
+    <section class="cart-layout">
+      <div class="cart-items">
+        <div class="cart-items__head">
+          <span>Item</span>
+          <span>Qty</span>
+          <span>Price</span>
+        </div>
+        <div class="cart-items__list"></div>
+      </div>
+
+      <aside class="cart-summary">
+        <h2>Order summary</h2>
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span class="summary-subtotal">$0</span>
+        </div>
+        <div class="summary-line">
+          <span>Shipping</span>
+          <span class="summary-shipping">$12</span>
+        </div>
+        <div class="summary-line total">
+          <span>Total</span>
+          <span class="summary-total">$0</span>
+        </div>
+        <button class="primary">Checkout</button>
+        <p class="fine-print">Free returns within 30 days. Express delivery available at checkout.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>Orbit Cart</h3>
+      <p>Intentional goods for modern living.</p>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Press</a>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

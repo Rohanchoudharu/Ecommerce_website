@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orbit Cart - Ecommerce Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <div class="bg-orbit"></div>
+  <header class="site-header">
+    <a class="logo" href="main.html">Orbit Cart</a>
+    <nav class="nav">
+      <a href="#new">New</a>
+      <a href="#collections">Collections</a>
+      <a href="#featured">Featured</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <div class="header-actions">
+      <button class="ghost">Search</button>
+      <a class="primary" href="cart.html">Cart <span class="cart-count">0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Future-ready essentials</p>
+        <h1>Gear that makes everyday feel premium.</h1>
+        <p class="lead">
+          Curated tech, home, and travel pieces that look sharp and work harder.
+          Built for people who move fast and choose intentionally.
+        </p>
+        <div class="hero-cta">
+          <button class="primary" data-add-to-cart="nova-time-pro">Shop the Drop</button>
+          <a class="ghost" href="product.html">Build a Bundle</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="stat">12k+</span>
+            <span class="stat-label">weekly shoppers</span>
+          </div>
+          <div>
+            <span class="stat">4.9</span>
+            <span class="stat-label">average rating</span>
+          </div>
+          <div>
+            <span class="stat">24h</span>
+            <span class="stat-label">shipping turn</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card__badge">Limited</div>
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Smart watch" />
+        <div class="hero-card__meta">
+          <h3>Nova Time Pro</h3>
+          <p>Smartwatch with 10-day battery</p>
+          <div class="price">$219</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="collections">
+      <h2>Shop by mood</h2>
+      <div class="collection-grid">
+        <article class="collection">
+          <h3>Studio Minimal</h3>
+          <p>Desk essentials and focused lighting.</p>
+          <button class="ghost small">Explore</button>
+        </article>
+        <article class="collection">
+          <h3>Motion Ready</h3>
+          <p>Travel kits, commuter bags, and chargers.</p>
+          <button class="ghost small">Explore</button>
+        </article>
+        <article class="collection">
+          <h3>Everyday Luxe</h3>
+          <p>Soft goods, scents, and smart storage.</p>
+          <button class="ghost small">Explore</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="featured" class="featured">
+      <div class="section-head">
+        <h2>Featured picks</h2>
+        <a class="ghost" href="product.html">View all</a>
+      </div>
+      <div class="product-grid">
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1512499617640-c2f999018b72?auto=format&fit=crop&w=600&q=80" alt="Headphones" />
+          <h3>Halo Headphones</h3>
+          <p>Noise cancelling, matte finish.</p>
+          <div class="product-footer">
+            <span>$199</span>
+            <button class="primary small" data-add-to-cart="halo-headphones">Add</button>
+          </div>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Camera" />
+          <h3>Lenscraft Mini</h3>
+          <p>Compact mirrorless camera.</p>
+          <div class="product-footer">
+            <span>$489</span>
+            <button class="primary small" data-add-to-cart="lenscraft-mini">Add</button>
+          </div>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1518441983254-51d2b9f5f0b4?auto=format&fit=crop&w=600&q=80" alt="Desk lamp" />
+          <h3>Arc Desk Lamp</h3>
+          <p>Warm glow, dimmable arc.</p>
+          <div class="product-footer">
+            <span>$79</span>
+            <button class="primary small" data-add-to-cart="arc-desk-lamp">Add</button>
+          </div>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Backpack" />
+          <h3>Pulse Pack</h3>
+          <p>Weatherproof, 28L capacity.</p>
+          <div class="product-footer">
+            <span>$129</span>
+            <button class="primary small" data-add-to-cart="pulse-pack">Add</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="new" class="promo">
+      <div class="promo-card">
+        <h2>New drop: Atmos pods</h2>
+        <p>Adaptive audio that switches modes automatically. Built for work, travel, and workout.</p>
+        <button class="primary" data-add-to-cart="atmos-pods">Grab yours</button>
+      </div>
+      <div class="promo-image">
+        <img src="https://images.unsplash.com/photo-1518441902110-9e67b0f9cfe1?auto=format&fit=crop&w=700&q=80" alt="Wireless earbuds" />
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <h2>What people say</h2>
+      <div class="review-grid">
+        <article>
+          <p>"Packaging was flawless and shipping was insanely fast. The watch is stunning."</p>
+          <span>- Mia R.</span>
+        </article>
+        <article>
+          <p>"Everything feels premium without being flashy. The desk lamp is my new favorite."</p>
+          <span>- Julian C.</span>
+        </article>
+        <article>
+          <p>"I built a bundle and saved a ton. The site is smooth and the products are legit."</p>
+          <span>- Priya L.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <h2>Join the Orbit list</h2>
+        <p>Drop alerts, early access, and design stories twice a month.</p>
+      </div>
+      <form>
+        <input type="email" placeholder="Email address" />
+        <button class="primary">Sign up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>Orbit Cart</h3>
+      <p>Intentional goods for modern living.</p>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Press</a>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
